@@ -9,4 +9,5 @@ jobs:
        - checkout
        - run:
           git submodule update --init
+       - run:
           dotnet build
