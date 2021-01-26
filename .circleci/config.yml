@@ -7,4 +7,6 @@ jobs:
     
      steps:
        - checkout
-       - run: dotnet build
+       - run: 
+          git submodule sync --recursive && git submodule update --recursive --init
+          dotnet build
